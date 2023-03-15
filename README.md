@@ -6,13 +6,13 @@ Pineda AR, Miedema H, Lingala SG, Nayak KS, “Optimizing constrained reconstruc
 
 ## Observer Model
 
-The code in the Observer-Model Folder runs uses a Laguerre-Gauss Channelized Hotelling Observer with 10 channels for estimating the area under the ROC curve (AUC) for a sample two-alternative forced choice (2-AFC) dataset.  This is an approximation to the ideal linear observer performance.  There is one MATALB function and one script in the folder along with a sample data set. 
+The code in the Observer-Model folder uses a Laguerre-Gauss channelized Hotelling observer with 10 channels to estimate the area under the ROC curve (AUC) for a sample two-alternative forced choice (2-AFC) dataset.  This is an approximation to the ideal linear observer performance.  There is one MATALB function and one script in the folder along with a sample data set. 
 
 runLG10_for2AFC.m:
-This script sets the parameters of the Laguerre-Gauss (LG) model and calls the LGAUC10.m function to compute the area under the ROC (AUC).  T
+This script sets the parameters of the Laguerre-Gauss (LG) model and calls the LGAUC10.m function to compute the area under the ROC (AUC).
 
 LGAUC10.m:
-This function has the image array and the parameters of the LG model as input and outputs the AUC.
+This function has the filename of the 2-AFC dataset and the parameters of the LG model as input and outputs the AUC.
 
 Sample2AFCIImages.mat:
 This data file contains a sample set of 40 images generated from the fastMRIdata raw data of FLAIR images:
